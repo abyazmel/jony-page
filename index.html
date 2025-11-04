@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JONY – Artist Profile</title>
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --accent: #0ea5b7;
+      --muted: #6b7280;
+      --radius: 16px;
+      --shadow: 0 8px 24px rgba(16,24,40,0.08);
+    }
+    body {
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: #0f172a;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: var(--shadow);
+    }
+    .header h1 {
+      margin: 20px 0 10px;
+      font-size: 36px;
+    }
+    .header p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .bio {
+      background: var(--card);
+      padding: 30px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 40px;
+    }
+    .bio h2 {
+      margin-top: 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .gallery img {
+      width:100%;
+      height: auto;
+      border-radius: var(--radius);
+      object-fit: cover;
+    }
+    .music {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .music a.button {
+      display: inline-block;
+      padding: 14px 24px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: var(--radius);
+      font-weight: 600;
+    }
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+ <div class="container">
+  <img src="./jony-photo.jpg" alt="JONY portrait" width="200" height="200">
+    <h1>JONY</h1>
+    <p>Azerbaijani-born Russian pop singer & songwriter</p>
+  </header>
+</div>
+
+   <section class="bio">
+  <h2>Biography</h2>
+  <p>
+    Born Jahid Afrail oglu Huseynli (February 29, 1996) in Baku, Azerbaijan, JONY moved to Moscow at age 4.
+  </p>
+  <p>
+    He gained major attention with his single <strong>“Kometa”</strong> released in 2019.
+  </p>
+  <p>
+    JONY is known for his blend of pop, hookah rap, and R&B styles and has won multiple awards in Russia.
+  </p>
+</section>
+
+    <section class="gallery">
+      <img src="https://via.placeholder.com/400x300" alt="JONY live performance">
+      <img src="https://via.placeholder.com/400x300" alt="JONY in studio">
+      <img src="https://via.placeholder.com/400x300" alt="JONY album cover">
+    </section>
+
+    <section class="music">
+      <h2>Listen to His Hit</h2>
+      <p><em>“Kometa” – JONY</em></p>
+      <a class="button" href="https://www.youtube.com/watch?v=0VIMEJR5l00" target="_blank">Watch on YouTube</a>
+    </section>
+
+    <footer class="footer">
+      &copy; 2025 JONY Fan Page – Created by You<br>
+      <a href="https://instagram.com/jony" target="_blank" style="color: var(--accent); text-decoration: none;">@JONY</a>
+    </footer>
+  </div>
+</body>
+</html>
